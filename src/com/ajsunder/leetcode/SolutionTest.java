@@ -6,6 +6,6 @@ public class SolutionTest {
 
     @Test
     public void twoSum() {
-        
+
     }
 }

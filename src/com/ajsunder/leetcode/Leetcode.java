@@ -9,7 +9,7 @@ public class Leetcode {
         int[] intArray = {2, 7, 11, 15};
 
         Solution twoSum = new Solution();
-        System.out.println(Arrays.toString(twoSum.twoSum(intArray, 22)));
+        System.out.println(Arrays.toString(twoSum.twoSum(intArray, 17)));
 
     }
 }

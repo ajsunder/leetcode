@@ -8,20 +8,23 @@ package com.ajsunder.leetcode;
 // Because nums[0] + nums[1] = 2 + 7 = 9,
 // return [0, 1].
 
-public class Solution {
+import java.util.Arrays;
 
-    int[] solution = new int[2];
+public class Solution {
 
     public int[] twoSum(int[] nums, int target) {
 
-
+        int[] solution = new int[2];
+        System.out.println(Arrays.toString(solution));
         System.out.println("target = " + target);
 
         for (int i = 0; i < nums.length; i++) {
             for (int j = 1; j < nums.length; j++) {
-                if (nums[i] + nums[j] == target){
+                if (nums[i] + nums[j] == target && i != j){
                     solution[0] = i;
                     solution[1] = j;
+                } else {
+                    System.out.println("FAIL! i, j = " + i + ", " + j);
                 }
             }
         }
