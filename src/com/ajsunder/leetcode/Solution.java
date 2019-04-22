@@ -8,11 +8,19 @@ package com.ajsunder.leetcode;
 // Because nums[0] + nums[1] = 2 + 7 = 9,
 // return [0, 1].
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
+import java.util.*;
 
 public class Solution {
+
+    public List<Integer> cellCompete(int[] states, int days)
+    {
+        List<Integer> houseStatus = new ArrayList<Integer>();
+        for (int i : states) {
+            houseStatus.add(i);
+        }
+        System.out.println(states.length);
+        return houseStatus;
+    }
 
     public int[] twoSum(int[] nums, int target){
         for (int i = 0; i < nums.length; i++) {
